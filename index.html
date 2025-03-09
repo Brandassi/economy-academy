@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("nav a").forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    const targetId = this.getAttribute("href");
+                    if (targetId.startsWith("#")) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Economy Academy</div>
+        <nav>
+            <ul>
+                <li><a href="#">Objetivo</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo</h1>
+            <p>Descubra o Mundo dos Investimentos</p>
+        </div>
+    </section>
+    
+    <section id="artigos"  class="artigos">
+        <h2>Artigos</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="artigos/artigo1.html">
+                    <h3>Principais Commodities na Bovespa</h3>
+                    <p>As commodities são produtos básicos como soja, petróleo e minério de ferro. Investir nelas pode ser vantajoso devido à alta demanda e valorização no mercado global.</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo2.html">
+                    <h3>O Impacto da Bolsa de Valores na Vida dos Brasileiros</h3>
+                    <p>**Título: O Impacto da Bolsa de Valores na Vida dos Brasileiros**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo3.html">
+                    <h3>Como Montar um Portfólio de Investimentos Diversificado</h3>
+                    <p>**Título: Como Montar um Portfólio de Investimentos Diversificado**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo4.html">
+                    <h3>O Papel dos Juros Compostos no Crescimento de Investimentos</h3>
+                    <p>**Título: O Papel dos Juros Compostos no Crescimento de Investimentos**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo5.html">
+                    <h3>Investindo em Criptomoedas: Riscos e Oportunidades</h3>
+                    <p>**Título: Investindo em Criptomoedas: Riscos e Oportunidades**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo6.html">
+                    <h3>A Influência do Mercado Internacional nas Finanças Pessoais</h3>
+                    <p>**Título: A Influência do Mercado Internacional nas Finanças Pessoais**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo7.html">
+                    <h3>Como Avaliar Ações para Investir na Bolsa de Valores</h3>
+                    <p>**Título: Como Avaliar Ações para Investir na Bolsa de Valores**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo8.html">
+                    <h3>Estratégias de Investimentos de Longo Prazo</h3>
+                    <p>**Título: Estratégias de Investimentos de Longo Prazo**</p>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="artigos/artigo9.html">
+                    <h3>Como o Impacto Econômico Global Afeta os Investimentos</h3>
+                    <p>**Título: Como o Impacto Econômico Global Afeta os Investimentos**</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="contato">
+            <h3>Entre em Contato</h3>
+            <input type="email" placeholder="Digite seu Email">
+            <button>Enviar</button>
+        </div>
+        <div class="patrocinadores">
+            <h3>Patrocinadores</h3>
+            <div class="patrocinadores-imagens">
+                <img src="./patrocinadores/bahia.png" alt="Patrocinador 1">
+                <img src="./patrocinadores/marcos2.png" alt="Patrocinador 2">
+                <img src="./patrocinadores/unasp.png" alt="Patrocinador 3">
+            </div>
+        </div>
+        <p>&copy; 2025 Economy Academy</p>
+    </footer>
+</body>
+</html>
