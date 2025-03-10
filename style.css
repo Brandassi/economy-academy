@@ -123,6 +123,28 @@ footer {
 .contato, .patrocinadores {
     margin-bottom: 20px;
 }
+.contato input {
+    padding: 10px;
+    border: 2px solid #1d3b2a;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.contato button {
+    background-color: #4c926a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contato button:hover {
+    background-color: #145223;
+}
 
 .patrocinadores-imagens {
     display: flex;
