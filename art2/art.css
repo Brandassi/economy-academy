@@ -113,6 +113,37 @@ footer p {
     background-color: #145223;
 }
 
+.fonte-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e6f2eb; /* Tom verde claro */
+    border-left: 5px solid #4c926a; /* Borda verde escura */
+    border-radius: 8px;
+  }
+  
+  .fonte-container h3 {
+    font-size: 20px;
+    color: #1d3b2a;
+  }
+  
+  .fonte-container p {
+    font-size: 18px;
+    color: #4c926a;
+    margin-bottom: 10px;
+  }
+  
+  .link-estilizado {
+    text-decoration: none;
+    color: #145223; /* Verde escuro */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .link-estilizado:hover {
+    color: #4c926a; /* Verde médio ao passar o mouse */
+  }
+  
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul li {
